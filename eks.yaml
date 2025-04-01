@@ -276,6 +276,8 @@ Resources:
         - !Ref PublicSubnet02
         - !Ref PrivateSubnet01
         - !Ref PrivateSubnet02
+      EncryptionConfig:
+        Resources: None
     DependsOn: [EKSIAMRole, PublicSubnet01, PublicSubnet02, PrivateSubnet01, PrivateSubnet02, ControlPlaneSecurityGroup]
 Outputs:
   SubnetIds:
